@@ -1,1 +1,55 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+
+  --ff-sans: 'Poppins', sans-serif;
+
+  --fw-light: 300;
+  --fw-medium: 500;
+  --fw-bold: 700;
+
+  --clr-primary: hsl(0, 0, 15);
+  --clr-secondary: hsl(0, 0, 35);
+
+  --text-primary: hsl(0, 0, 70);
+  --text-secondary: hsl(0, 0, 90);
+
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: .8125rem;
+  font-family: var(--ff-sans);
+  font-weight: var(--fw-medium);
+  line-height: 1;
+  color: var(--text-primary);
+}
+
+body {
+  margin: 0;
+  background-color: var(--clr-primary);
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('assets/fonts/Poppins/Poppins-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('assets/fonts/Poppins/Poppins-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('assets/fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
