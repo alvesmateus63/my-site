@@ -6,11 +6,18 @@
   --fw-medium: 500;
   --fw-bold: 700;
 
-  --clr-primary: hsl(0, 0, 15);
-  --clr-secondary: hsl(0, 0, 35);
+  --fs-sm: 1.5rem;
+  --fs-md: 2.5rem;
+  --fs-lg: 3rem;
+  --fs-xl: 4rem;
 
-  --text-primary: hsl(0, 0, 70);
-  --text-secondary: hsl(0, 0, 90);
+  --clr-primary: #262626;
+  --clr-secondary: #595959;
+  --clr-tertiary: #FF7D00;
+
+  --text-primary: #e6e6e6;
+  --text-secondary: #b3b3b3;
+
 
 }
 
@@ -21,16 +28,33 @@
 }
 
 html {
-  font-size: .8125rem;
+  font-size: 1rem;
   font-family: var(--ff-sans);
   font-weight: var(--fw-medium);
   line-height: 1;
   color: var(--text-primary);
 }
 
+@media(max-width: 530px) {
+  html {
+    font-size: 60%;
+  }
+}
+
 body {
   margin: 0;
+  padding-inline: 1rem;
   background-color: var(--clr-primary);
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
 }
 
 @font-face {

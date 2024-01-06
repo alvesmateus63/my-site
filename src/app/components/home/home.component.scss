@@ -1,0 +1,19 @@
+.home {
+  height: 100dvh;
+  display: grid;
+  place-content: center;
+
+  .home__title {
+    color: var(--clr-tertiary);
+
+    font-size: var(--fs-xl);
+  }
+
+  .home__job {
+    color: var(--text-secondary);
+
+    font-size: var(--fs-md);
+    font-weight: var(--fw-light);
+    text-transform: uppercase;
+  }
+}
