@@ -1,0 +1,40 @@
+.contact {
+  .contact__title {
+    color: var(--text-secondary);
+
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-bold);
+    text-transform: uppercase;
+    letter-spacing: 0.8rem;
+  }
+
+  .contact__links {
+    display: flex;
+    gap: 1rem;
+    margin-block: 1rem;
+
+    .links__item {
+      width: 120px;
+      height: 120px;
+
+      display: grid;
+      place-content: center;
+
+      border: 2px solid var(--clr-tertiary);
+      border-radius: 50%;
+
+      color: var(--clr-secondary);
+
+      text-decoration: none;
+
+    }
+
+    .item__title {
+      margin-block-start: 5px;
+    }
+
+  }
+
+
+
+}
