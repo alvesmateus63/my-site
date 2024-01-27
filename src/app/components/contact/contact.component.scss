@@ -17,9 +17,12 @@
       width: 120px;
       height: 120px;
 
-      display: grid;
-      place-content: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
 
+      padding: 1.2rem;
       border: 2px solid var(--clr-tertiary);
       border-radius: 50%;
 
@@ -27,6 +30,17 @@
 
       text-decoration: none;
 
+      img {
+        width: 80%;
+      }
+
+    }
+
+    @media (max-width: 530px) {
+      .links__item {
+        width: 80px;
+        height: 80px;
+      }
     }
 
     .item__title {
