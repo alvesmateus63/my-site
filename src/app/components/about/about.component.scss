@@ -1,0 +1,30 @@
+.about {
+    margin-block: 1rem;
+
+    .about__content {
+        display: flex;
+        gap: 3rem;
+        margin-block: 1rem;
+
+        .content__text {    
+            flex: 1;
+            color: var(--text-primary);
+            font-size: var(--fs-xm);
+        }
+
+        .content__image {
+            display: none;
+            flex: 1;
+        }
+
+    }
+
+    @media (max-width: 530px) {
+        .about__content {
+          flex-direction: column;
+            .content__text {
+                font-size: var(--fs-sm);
+            }
+        }
+      }
+}
