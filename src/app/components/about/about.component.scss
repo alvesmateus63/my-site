@@ -3,18 +3,46 @@
 
     .about__content {
         display: flex;
+        align-items: flex-start;
         gap: 3rem;
         margin-block: 1rem;
 
-        .content__text {    
-            flex: 1;
-            color: var(--text-primary);
-            font-size: var(--fs-xm);
-        }
+        .content__description {       
 
-        .content__image {
-            display: none;
-            flex: 1;
+            .description__text {    
+                flex: 1;
+
+                margin-block-end: 0.8rem;
+
+                color: var(--text-secondary);
+                font-size: var(--fs-xm);
+            }
+
+            .description__skills {
+                flex: 1;
+
+                .skills__title {
+                    color: var(--text-primary);
+                }
+
+                ul {
+                    color: var(--clr-tertiary);
+                    list-style: circle;
+
+                    li {
+                        display: flex;
+                        flex-direction: column;
+                        margin-block: 0.5rem;
+
+                        &>span {
+                            margin-inline-start: 1rem;
+                            color: var(--text-secondary);
+                        }
+                    }
+
+                }
+
+            }
         }
 
     }
